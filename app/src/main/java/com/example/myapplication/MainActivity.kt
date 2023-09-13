@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import java.time.temporal.WeekFields
 import java.util.Calendar
+import java.util.Date
 import java.util.Locale
 
 
@@ -40,7 +41,7 @@ class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+//        Date()
         Log.d("", WeekdayName(Locale.CHINESE).firstDayOfWeek.toString())
         Log.d("", WeekdayName(Locale.CHINA).firstDayOfWeek.toString())
         Log.d("", WeekdayName(Locale.FRANCE).firstDayOfWeek.toString())
